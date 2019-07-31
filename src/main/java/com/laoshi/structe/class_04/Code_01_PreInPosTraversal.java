@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Code_01_PreInPosTraversal {
 
-	public static class Node {
+	private static class Node {
 		public int value;
 		public Node left;
 		public Node right;
@@ -14,7 +14,7 @@ public class Code_01_PreInPosTraversal {
 		}
 	}
 
-	public static void preOrderRecur(Node head) {
+	private static void preOrderRecur(Node head) {
 		if (head == null) {
 			return;
 		}

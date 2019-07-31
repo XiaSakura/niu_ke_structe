@@ -1,10 +1,12 @@
 package com.xia.structe.test;
 
-
 public class Test01 {
     public static void main(String[] args) {
-        int divide = divide(1, 5);
-        System.out.println("divide = " + divide);
+//        int divide = divide(1, 5);
+//        System.out.println("divide = " + divide);
+        int[] arr = new int[]{1, 2};
+        arr[0] = (arr[0] | (1 << 16));
+        System.out.println(arr[0]);
     }
 
     public static int divide(int l, int r) {
@@ -19,7 +21,7 @@ public class Test01 {
                 //l~r之间
                 str.append(i);
                 Integer integer = Integer.valueOf(str.toString());
-                if (integer%3==0){
+                if (integer % 3 == 0) {
                     count++;
                 }
             }

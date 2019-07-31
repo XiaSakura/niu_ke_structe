@@ -20,7 +20,7 @@ public class Code_03_Islands {
 		return res;
 	}
 
-	public static void infect(int[][] m, int i, int j, int N, int M) {
+	private static void infect(int[][] m, int i, int j, int N, int M) {
 		if (i < 0 || i >= N || j < 0 || j >= M || m[i][j] != 1) {
 			return;
 		}
